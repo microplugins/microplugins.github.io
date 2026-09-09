@@ -1,11 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MicroPlugins</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroPlugins — Performance WordPress Plugins | Enterprise Powerhouses &amp; Micro-Tools</title>
+  <meta name="description"
+    content="MicroPlugins builds high-performance WordPress plugins. From enterprise flagships like Ultimate Media Player and Ultimate Popup Maker to surgical zero-bloat micro-utilities.">
+  <link rel="canonical" href="https://microplugins.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://microplugins.com/">
+  <meta property="og:title" content="MicroPlugins — Performance WordPress Plugins">
+  <meta property="og:description"
+    content="From enterprise flagships like Ultimate Media Player and Ultimate Popup Maker to surgical micro-utilities.">
+  <meta property="og:image" content="https://microplugins.com/assets/images/logo-256.png">
+  <meta property="og:site_name" content="MicroPlugins">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MicroPlugins — Performance WordPress Plugins">
+  <meta name="twitter:description"
+    content="Enterprise powerhouse plugins and surgical zero-bloat micro-utilities for WordPress.">
+  <meta name="twitter:image" content="https://microplugins.com/assets/images/logo-256.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon-128.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon-256.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="assets/images/favicon-128.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://microplugins.com/#organization",
+        "name": "MicroPlugins",
+        "url": "https://microplugins.com/",
+        "logo": "https://microplugins.com/assets/images/logo-256.png",
+        "description": "Developer of high-performance WordPress plugins engineered for speed, clean architecture, and zero bloat.",
+        "sameAs": [
+          "https://github.com/microplugins"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://microplugins.com/#website",
+        "url": "https://microplugins.com/",
+        "name": "MicroPlugins",
+        "publisher": {
+          "@id": "https://microplugins.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-    <h1>MicroPlugins updated</h1>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="MicroPlugins Homepage">
+        <img src="assets/images/logo-256.png" alt="MicroPlugins" class="brand-logo" width="200" height="33">
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="about.html">About &amp; Philosophy</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="docs.html">Docs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="plugins.html" class="btn btn-primary btn-sm">Browse Plugins</a>
+        <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="mobile-menu" role="region" aria-label="Mobile Navigation">
+      <div class="mobile-nav-links">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="plugins.html">Plugins Catalog</a>
+        <a href="about.html">About &amp; Philosophy</a>
+        <a href="pricing.html">Pricing &amp; Plans</a>
+        <a href="docs.html">Documentation</a>
+        <a href="blog.html">Blog &amp; Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Support</a>
+      </div>
+      <a href="plugins.html" class="btn btn-primary" style="width: 100%;">View All Plugins</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            Independent WordPress Suites &bull; WP 6.0–6.7+ &bull; PHP 8.0–8.3
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-main">High-Performance WordPress Plugins</span>
+          <span class="hero-title-accent gradient-text">Engineered With Zero Bloat</span>
+        </h1>
+
+        <p class="hero-description lead">
+          We engineer powerhouse WordPress plugins built with one uncompromising rule:
+          <strong>zero unnecessary bloat</strong>. From enterprise video players with dynamic anti-piracy watermarking
+          to 60fps GPU-accelerated popup builders, experience clean architecture that keeps your site lightning fast.
+        </p>
+
+        <div class="hero-actions">
+          <a href="plugins.html" class="btn btn-primary btn-lg">
+            Explore Our Plugins
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">
+            View Pricing &amp; Plans
+          </a>
+        </div>
+
+        <!-- Trust Highlights Strip -->
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Direct ZIP Download</span>
+          </div>
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>14-Day Money-Back Guarantee</span>
+          </div>
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>1-Click Dashboard Updates</span>
+          </div>
+          <div class="trust-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+            </svg>
+            <span>Zero Telemetry / Ads</span>
+          </div>
+        </div>
+
+        <!-- Interactive Hero Showcase Deck -->
+        <div class="hero-showcase" aria-label="Interactive Product Showcase">
+          <div class="hero-showcase-topbar">
+            <div class="terminal-dots" aria-hidden="true">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+
+            <div class="hero-showcase-tabs" role="tablist" aria-label="Plugin Showcase Views">
+              <button class="hero-tab-btn active" data-tab-target="showcase-player" role="tab" aria-selected="true" aria-controls="showcase-player">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Ultimate Media Player</span>
+              </button>
+              <button class="hero-tab-btn" data-tab-target="showcase-popup" role="tab" aria-selected="false" aria-controls="showcase-popup">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                <span>Ultimate Popup Maker</span>
+              </button>
+              <button class="hero-tab-btn" data-tab-target="showcase-benchmark" role="tab" aria-selected="false" aria-controls="showcase-benchmark">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span>Performance Benchmark</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tab Pane 1: Ultimate Media Player Showcase -->
+          <div id="showcase-player" class="hero-showcase-pane active" role="tabpanel">
+            <div class="player-mockup">
+              <div class="player-canvas">
+                <div class="player-badge-top">
+                  <span class="live-hls-badge">
+                    <span style="width: 6px; height: 6px; border-radius: 50%; background: #34d399; display: inline-block;"></span>
+                    BunnyStream HLS 1080p Adaptive
+                  </span>
+                  <span class="watermark-chip">
+                    🔒 session: demo@agency.dev &bull; dynamic anti-piracy active
+                  </span>
+                </div>
+
+                <div class="player-center-play" title="Interactive Media Player Preview" role="button" aria-label="Play media player preview">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </div>
+
+                <div class="player-controls-bottom">
+                  <div class="player-scrubber" aria-label="Video scrubber">
+                    <div class="player-progress"></div>
+                  </div>
+                  <div class="player-ctrl-row">
+                    <div style="display:flex; align-items:center; gap: 0.75rem;">
+                      <span style="color: #fff; font-weight: 600;">▶ 03:24</span>
+                      <span>/ 14:50</span>
+                      <span style="color: #60a5fa;" class="desktop-only">• Chapter: Clean Architecture</span>
+                    </div>
+                    <div style="display:flex; align-items:center; gap: 0.65rem;">
+                      <span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-weight: 600;">1080p 60fps</span>
+                      <span>1.25x</span>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Audio & Waveform Track Bar -->
+              <div class="player-audio-bar">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="font-size: 0.85rem; color: #fff; font-weight: 600;">🎙️ Waveform Audio Player:</span>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Podcast Ep. 42 — Eliminating WordPress Bloat</span>
+                </div>
+                <div class="waveform-preview" aria-hidden="true">
+                  <span class="wave-bar" style="height: 8px; animation-delay: 0.1s;"></span>
+                  <span class="wave-bar" style="height: 14px; animation-delay: 0.2s;"></span>
+                  <span class="wave-bar" style="height: 18px; animation-delay: 0.3s;"></span>
+                  <span class="wave-bar" style="height: 10px; animation-delay: 0.15s;"></span>
+                  <span class="wave-bar" style="height: 16px; animation-delay: 0.25s;"></span>
+                  <span class="wave-bar" style="height: 12px; animation-delay: 0.35s;"></span>
+                  <span class="wave-bar" style="height: 7px; animation-delay: 0.05s;"></span>
+                </div>
+                <a href="plugins/ultimate-media-player-and-playlist.html" style="font-size: 0.8rem; color: var(--primary); font-weight: 600; text-decoration: none;">
+                  View Full Player Specs &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Pane 2: Ultimate Popup Maker Showcase -->
+          <div id="showcase-popup" class="hero-showcase-pane" role="tabpanel">
+            <div class="popup-mockup">
+              <div class="popup-card-preview">
+                <span class="popup-badge">⚡ Exit-Intent Trigger (0.08s Detection)</span>
+                <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem; font-weight: 700;">Accelerate WordPress Conversions</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.5;">
+                  60 FPS hardware-accelerated popup canvas with instant webhook CRM dispatch and zero render-blocking scripts.
+                </p>
+                <div class="popup-form-row" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                  <input type="email" value="alex@agency.design" readonly style="flex: 1; padding: 0.65rem 1rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.15); background: #0a0e17; color: #fff; font-size: 0.88rem;">
+                  <button style="padding: 0.65rem 1.25rem; border-radius: 6px; border: none; background: #3b82f6; color: #fff; font-weight: 600; cursor: pointer;">Join Now</button>
+                </div>
+                <div class="popup-tags-row" style="display: flex; justify-content: space-between; font-size: 0.78rem; color: #34d399; font-family: var(--font-mono);">
+                  <span>✓ 60 FPS GPU Canvas</span>
+                  <span>✓ &lt; 15KB Runtime</span>
+                  <span>✓ 0 jQuery Dependencies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Pane 3: Architecture Benchmark Showcase -->
+          <div id="showcase-benchmark" class="hero-showcase-pane" role="tabpanel">
+            <div class="benchmark-mockup">
+              <div style="color: #60a5fa; margin-bottom: 0.75rem;"># Architecture Benchmark: MicroPlugins vs Typical Bloated WordPress Suites</div>
+              <div style="color: #34d399;">✓ Combined Frontend JavaScript: 18.4 KB (Pure Vanilla ES6+, 0 jQuery, 0 React)</div>
+              <div style="color: #34d399;">✓ Typical Bloated Suite JS: 840+ KB (Heavy libraries, render-blocking scripts)</div>
+              <div style="color: #34d399;">✓ PageSpeed &amp; Core Web Vitals Impact: 100/100 Mobile &amp; Desktop (0 CLS, 0 FID)</div>
+              <div style="color: #34d399;">✓ Database Overhead: 0 recurring transient bloat, clean uninstallation guaranteed</div>
+              <div style="color: #38bdf8; margin-top: 0.75rem;">$ wp plugin status --fields=name,status,memory_footprint</div>
+              <div style="color: var(--text-body); padding-left: 1.25rem;">ultimate-media-player-and-playlist : Active (0.18 MB memory overhead)</div>
+              <div style="color: var(--text-body); padding-left: 1.25rem;">ultimate-popup-maker               : Active (0.14 MB memory overhead)</div>
+              <div style="color: #10b981; margin-top: 0.5rem;">✓ Status: 100% Production Ready &bull; Direct Secure Delivery &bull; Zero External Telemetry</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-value accent">&lt; 20KB</div>
+            <div class="stat-label">Ultra-lean visitor runtime</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">60 FPS</div>
+            <div class="stat-label">GPU-accelerated UI animations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value primary">100%</div>
+            <div class="stat-label">PHP 8.2 &amp; 8.3 verified</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">0 jQuery</div>
+            <div class="stat-label">Modern Vanilla JS core</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Flagship Spotlight Section -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.015);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Our Flagship Powerhouses</span>
+          <h2 class="section-title">Built for Serious Creators &amp; Digital Agencies</h2>
+          <p class="section-subtitle">
+            Enterprise-level capability without the sluggish code. Meet our two flagship WordPress plugins.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+
+          <!-- Flagship 1: Ultimate Media Player -->
+          <article class="plugin-card"
+            style="border-color: rgba(59, 130, 246, 0.4); background: linear-gradient(180deg, rgba(24, 34, 56, 0.95) 0%, rgba(19, 27, 46, 0.95) 100%);">
+            <div class="plugin-card-header">
+              <div class="plugin-icon-wrap"
+                style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <div class="plugin-badges">
+                <span class="badge badge-blue">Flagship Powerhouse</span>
+                <span class="badge badge-green">v1.0.0</span>
+              </div>
+            </div>
+            <h3 class="plugin-name" style="font-size: 1.45rem;"><a
+                href="plugins/ultimate-media-player-and-playlist.html">Ultimate Media Player and Playlist</a></h3>
+            <p class="plugin-tagline">
+              Advanced audio and video player for course creators and publishers. Features anti-piracy dynamic
+              watermarks, Bunny.net adaptive HLS streaming, in-video lead capture gates, and cookieless viewer
+              analytics.
+            </p>
+            <ul class="plugin-features-list">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Anti-Piracy Watermarking:</strong> Float viewer tokens and IP to deter screen recording.
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Adaptive HLS Streaming:</strong> Buffer-free 1080p, 720p, 480p quality switching.
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Lead Generation Gate:</strong> Pause video to capture viewer emails automatically.
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Cookieless Analytics:</strong> Drop-off retention curves with zero tracking cookies.
+              </li>
+            </ul>
+            <div class="plugin-meta-specs">
+              <span>WP 6.0 - 6.7+ | PHP 7.4 - 8.3</span>
+              <span style="color: #60a5fa;">Gutenberg Blocks + Shortcode</span>
+            </div>
+            <div class="plugin-actions">
+              <a href="plugins/ultimate-media-player-and-playlist.html" class="btn btn-primary btn-sm"
+                style="flex: 1;">Explore Media Player &rarr;</a>
+              <a href="pricing.html" class="btn btn-secondary btn-sm">Pricing</a>
+            </div>
+          </article>
+
+          <!-- Flagship 2: Ultimate Popup Maker -->
+          <article class="plugin-card"
+            style="border-color: rgba(245, 158, 11, 0.4); background: linear-gradient(180deg, rgba(24, 34, 56, 0.95) 0%, rgba(19, 27, 46, 0.95) 100%);">
+            <div class="plugin-card-header">
+              <div class="plugin-icon-wrap"
+                style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <div class="plugin-badges">
+                <span class="badge badge-amber">Flagship Powerhouse</span>
+                <span class="badge badge-green">v1.0.0</span>
+              </div>
+            </div>
+            <h3 class="plugin-name" style="font-size: 1.45rem;"><a href="plugins/ultimate-popup-maker.html">Ultimate
+                Popup Maker</a></h3>
+            <p class="plugin-tagline">
+              Enterprise-grade multi-layer visual popup builder for WordPress with sequenced 60fps animations,
+              integrated leads CRM, and an ultra-lean Vanilla JS runtime (&lt;20KB) with zero jQuery dependencies.
+            </p>
+            <ul class="plugin-features-list">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Multi-Layer Visual Canvas:</strong> Freeform 3D positioning with depth and rotation.
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Sequenced Keyframe Animations:</strong> Staggered layer delays with 60fps GPU easing.
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Precision Triggers:</strong> Cursor exit-intent, scroll depth, inactivity, click triggers.
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+                <strong>Zero-Bloat Runtime:</strong> &lt;20KB Vanilla JS, zero jQuery, 0 impact on Core Web Vitals.
+              </li>
+            </ul>
+            <div class="plugin-meta-specs">
+              <span>WP 6.0 - 6.7+ | PHP 7.4 - 8.3</span>
+              <span style="color: #fbbf24;">Built-in Leads CRM</span>
+            </div>
+            <div class="plugin-actions">
+              <a href="plugins/ultimate-popup-maker.html" class="btn btn-primary btn-sm" style="flex: 1;">Explore Popup
+                Maker &rarr;</a>
+              <a href="pricing.html" class="btn btn-secondary btn-sm">Pricing</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="plugins.html" class="btn btn-secondary btn-lg">Browse Full Plugin Catalog &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why MicroPlugins Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">The MicroPlugins Standard</span>
+          <h2 class="section-title">Big Features Don't Have to Mean Big Bloat</h2>
+          <p class="section-subtitle">
+            Most WordPress plugins drag down your site because of poor architecture. We build powerful software that
+            adheres to clean engineering principles.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Modern Vanilla Runtime</h3>
+            <p class="card-text">
+              We discard legacy jQuery dependencies and massive runtime frameworks in favor of ultra-lean, modern
+              Vanilla JavaScript and native CSS3 GPU hardware transforms.
+            </p>
+            <a href="about.html" class="btn-link">Read our manifesto &rarr;</a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Zero Autoload Pollution</h3>
+            <p class="card-text">
+              We never dump multi-megabyte JSON blobs into <code>wp_options</code> with <code>autoload=yes</code>. Your
+              object cache stays lean and your database TTFB stays fast.
+            </p>
+            <a href="blog/auditing-database-bloat-in-wordpress.html" class="btn-link">Learn about DB bloat &rarr;</a>
+          </div>
+
+          <div class="card">
+            <div class="card-icon amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Respectful WP Admin</h3>
+            <p class="card-text">
+              Zero full-screen modal takeovers, zero manipulative warning banners, and zero hidden telemetry. Clean,
+              responsive admin panels designed to help you work faster.
+            </p>
+            <a href="about.html#philosophy" class="btn-link">Our core values &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side-by-Side Philosophy Comparison -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.015);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Direct Comparison</span>
+          <h2 class="section-title">MicroPlugins vs. Traditional Legacy Plugins</h2>
+          <p class="section-subtitle">
+            See how our modern architecture protects your server health and user experience.
+          </p>
+        </div>
+
+        <div class="comparison-container">
+          <div class="comparison-grid">
+            <div class="comp-header">Evaluation Metric</div>
+            <div class="comp-header featured">MicroPlugins</div>
+            <div class="comp-header">Legacy WordPress Plugins</div>
+
+            <div class="comp-cell feature-name">Frontend Dependencies</div>
+            <div class="comp-cell featured">Zero jQuery; ultra-lean Vanilla JS (&lt;20KB)</div>
+            <div class="comp-cell negative">Bundles jQuery, heavy UI libraries, polyfills</div>
+
+            <div class="comp-cell feature-name">Core Web Vitals Impact</div>
+            <div class="comp-cell featured">0.00 layout shift (CLS), 60fps animations</div>
+            <div class="comp-cell negative">Severe Total Blocking Time (TBT) &amp; layout shifts</div>
+
+            <div class="comp-cell feature-name">Database Footprint</div>
+            <div class="comp-cell featured">Strict non-autoloading, clean transients</div>
+            <div class="comp-cell negative">Dozens of bloated wp_options autoload rows</div>
+
+            <div class="comp-cell feature-name">Admin Experience</div>
+            <div class="comp-cell featured">React WYSIWYG builders, zero spam ads</div>
+            <div class="comp-cell negative">Nag notices, fake security alerts, review begging</div>
+
+            <div class="comp-cell feature-name">Privacy &amp; Analytics</div>
+            <div class="comp-cell featured">Cookieless, GDPR/CCPA compliant by design</div>
+            <div class="comp-cell negative">Injects tracking pixels and third-party beacons</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Social Proof -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Loved by Builders</span>
+          <h2 class="section-title">Trusted by WordPress Course Creators &amp; Agencies</h2>
+          <p class="section-subtitle">
+            Here is what high-traffic website owners and developers say about MicroPlugins products.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Ultimate Media Player solved our course piracy headache overnight. Dynamic watermarking with viewer IP
+              tokens stopped student screen leaks dead in their tracks."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JW</div>
+              <div>
+                <div class="author-name">Jason Wright</div>
+                <div class="author-role">Founder, ProEdu Video Academy</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Ultimate Popup Maker gives us Green Popups-level visual power but with a modern React canvas and zero
+              jQuery. Our landing page conversion jumped 32% with zero speed penalty."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EM</div>
+              <div>
+                <div class="author-name">Elena Morales</div>
+                <div class="author-role">Head of Growth, ConversionWave Agency</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "The MicroPlugins team actually understands WordPress performance. Their plugins don't dump megabytes of
+              autoload junk into the database and they load instantly."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TH</div>
+              <div>
+                <div class="author-name">Thomas Hansen</div>
+                <div class="author-role">Senior DevOps Engineer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="eyebrow" style="margin-bottom: 1.25rem;">Start Fast, Stay Fast</span>
+          <h2>Ready to Power Up Your WordPress Sites?</h2>
+          <p>
+            Explore our flagship media and popup powerhouses or integrate our specialized performance micro-utilities
+            today.
+          </p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="plugins.html" class="btn btn-primary btn-lg">Browse Plugin Catalog</a>
+            <a href="pricing.html" class="btn btn-secondary btn-lg">View Pricing &amp; Licenses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="MicroPlugins Homepage">
+            <img src="assets/images/logo-256.png" alt="MicroPlugins" class="brand-logo" width="200" height="33">
+          </a>
+          <p class="footer-tagline">
+            Performance-driven WordPress plugins — from surgical micro-tools to enterprise powerhouse suites.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-dim);">
+            GPL v2+ licensed. Verified for WordPress 6.0 to 6.7+ and PHP 7.4 - 8.3.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Plugins</h4>
+          <ul class="footer-links">
+            <li><a href="plugins/ultimate-media-player-and-playlist.html">Ultimate Media Player</a></li>
+            <li><a href="plugins/ultimate-popup-maker.html">Ultimate Popup Maker</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#philosophy">Our Philosophy</a></li>
+            <li><a href="pricing.html">Pricing &amp; Licenses</a></li>
+            <li><a href="blog.html">Blog &amp; Tutorials</a></li>
+            <li><a href="contact.html">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="https://github.com/microplugins" target="_blank" rel="noopener noreferrer">GitHub
+                Repository</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+            <li><a href="contact.html">Security Disclosure</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 MicroPlugins. All rights reserved. WordPress is a registered trademark of the WordPress
+          Foundation.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="refund-policy.html">Refunds</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="assets/js/main.js" defer></script>
 </body>
+
 </html>

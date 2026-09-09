@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Directory &amp; Developer Guides — MicroPlugins</title>
+  <meta name="description"
+    content="Explore dedicated documentation for all MicroPlugins products. Setup guides, wp-config.php constants, WP-CLI commands, and developer APIs.">
+  <link rel="canonical" href="https://microplugins.com/docs.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://microplugins.com/docs.html">
+  <meta property="og:title" content="Documentation Directory &amp; Developer Guides — MicroPlugins">
+  <meta property="og:description"
+    content="Explore dedicated documentation for all MicroPlugins products. Setup guides, wp-config.php constants, WP-CLI commands, and developer APIs.">
+  <meta property="og:image" content="https://microplugins.com/assets/images/logo-256.png">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon-128.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/images/favicon-256.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="assets/images/favicon-128.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="MicroPlugins Homepage">
+        <img src="assets/images/logo-256.png" alt="MicroPlugins" class="brand-logo" width="200" height="33">
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="plugins.html">Plugins</a>
+        <a href="about.html">About &amp; Philosophy</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="docs.html" class="active" aria-current="page">Docs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="plugins.html" class="btn btn-primary btn-sm">Browse Plugins</a>
+        <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" role="region" aria-label="Mobile Navigation">
+      <div class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="plugins.html">Plugins Catalog</a>
+        <a href="about.html">About &amp; Philosophy</a>
+        <a href="pricing.html">Pricing &amp; Plans</a>
+        <a href="docs.html" class="active" aria-current="page">Documentation</a>
+        <a href="blog.html">Blog &amp; Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Support</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <!-- Hero / Title -->
+    <section class="section">
+      <div class="container text-center" style="text-align: center;">
+        <span class="eyebrow" style="margin-bottom: 1rem;">Developer Center</span>
+        <h1 style="margin-bottom: 1rem;">Documentation &amp; Guides</h1>
+        <p class="lead" style="max-width: 680px; margin: 0 auto 2rem auto;">
+          In-depth technical guides, configuration constants, WP-CLI recipes, and developer API references for every
+          MicroPlugins extension.
+        </p>
+
+        <!-- Live Search Bar -->
+        <div style="max-width: 540px; margin: 0 auto 1.5rem auto; position: relative;">
+          <input type="search" id="doc-filter"
+            placeholder="Search docs (e.g. watermarking, cloudflare, smtp, cli, hooks)..."
+            style="width: 100%; padding: 0.85rem 1.25rem; font-size: 0.95rem; border-radius: 9999px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-main); outline: none; box-shadow: var(--shadow-sm);"
+            aria-label="Filter documentation guides">
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="category-btn active" data-doc-category="all"
+            style="padding: 0.4rem 1rem; border-radius: 9999px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-main); font-size: 0.85rem; cursor: pointer;">All
+            Documentation</button>
+          <button class="category-btn" data-doc-category="media"
+            style="padding: 0.4rem 1rem; border-radius: 9999px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-muted); font-size: 0.85rem; cursor: pointer;">Media
+            &amp; Audio</button>
+          <button class="category-btn" data-doc-category="marketing"
+            style="padding: 0.4rem 1rem; border-radius: 9999px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-muted); font-size: 0.85rem; cursor: pointer;">Marketing
+            &amp; Popups</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Docs Hub Grid -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <div class="grid grid-2" id="doc-cards-grid" style="gap: 2rem;">
+
+          <!-- Card 1: Ultimate Media Player -->
+          <div class="card doc-card" data-category="media"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                <div style="display: flex; gap: 0.5rem;">
+                  <span class="badge badge-blue">Flagship Suite</span>
+                  <span class="badge badge-green">Audio &amp; Video</span>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono);">v1.0.0</span>
+              </div>
+              <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem;">
+                <a href="docs/ultimate-media-player-and-playlist.html"
+                  style="color: var(--text-main); text-decoration: none;">Ultimate Media Player &amp; Playlist</a>
+              </h2>
+              <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+                Unified audio/video playback engine engineered for zero CPU lockups. Features anti-piracy dynamic
+                floating watermarking, native BunnyStream HLS adaptive streaming, and in-video email lead gates.
+              </p>
+
+              <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; margin-bottom: 1.5rem;">
+                <div
+                  style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 0.6rem; font-weight: 600;">
+                  Documented Topics:</div>
+                <ul
+                  style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>• Anti-Piracy Floating Watermark Configuration</li>
+                  <li>• BunnyStream HLS Adaptive Bitrate Setup</li>
+                  <li>• In-Video Lead Capture &amp; Email Gating</li>
+                  <li>• Gutenberg Blocks &amp; <code>[mump_player]</code> Shortcode Reference</li>
+                  <li>• JavaScript Event Callbacks &amp; Cookieless Analytics</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <a href="docs/ultimate-media-player-and-playlist.html" class="btn btn-primary"
+                style="width: 100%; text-align: center; display: block;">
+                View Media Player Documentation &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Ultimate Popup Maker -->
+          <div class="card doc-card" data-category="marketing"
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                <div style="display: flex; gap: 0.5rem;">
+                  <span class="badge badge-amber">Flagship Suite</span>
+                  <span class="badge badge-blue">Conversions</span>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono);">v1.0.0</span>
+              </div>
+              <h2 style="font-size: 1.4rem; margin-bottom: 0.75rem;">
+                <a href="docs/ultimate-popup-maker.html"
+                  style="color: var(--text-main); text-decoration: none;">Ultimate Popup Maker</a>
+              </h2>
+              <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+                Modern conversion popup engine without the jQuery bloat. Multi-layer visual canvas builder, sequenced
+                60fps GPU entrance/exit animations, and intelligent exit intent triggers.
+              </p>
+
+              <div style="border-top: 1px solid var(--border-color); padding-top: 1rem; margin-bottom: 1.5rem;">
+                <div
+                  style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 0.6rem; font-weight: 600;">
+                  Documented Topics:</div>
+                <ul
+                  style="list-style: none; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>• Visual Multi-Layer Canvas Editor Architecture</li>
+                  <li>• Hardware-Accelerated 60fps Animation Sequencing</li>
+                  <li>• Behavioral Triggers: Exit Intent, Scroll Depth &amp; Inactivity</li>
+                  <li>• Built-in Leads CRM &amp; Webhook Dispatch (Zapier/Make)</li>
+                  <li>• Client-side JavaScript Event API &amp; DOM Custom Events</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <a href="docs/ultimate-popup-maker.html" class="btn btn-primary"
+                style="width: 100%; text-align: center; display: block;">
+                View Popup Maker Documentation &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MicroPlugins Architecture Standards -->
+    <section class="section"
+      style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="text-center" style="text-align: center; margin-bottom: 3rem;">
+          <span class="eyebrow">Engineering Baseline</span>
+          <h2>The MicroPlugins Architectural Standard</h2>
+          <p class="lead" style="max-width: 640px; margin: 0 auto;">
+            Every plugin we engineer adheres to strict runtime, performance, and database integrity rules.
+          </p>
+        </div>
+
+        <div class="grid grid-3" style="gap: 2rem;">
+          <div class="card" style="padding: 1.75rem; background: var(--bg-main);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--primary);">&#9889;</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Zero Framework Bloat</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+              Zero jQuery, zero bulky CSS frameworks. Front-end runtimes are written in modular Vanilla JavaScript
+              (&lt;20KB) and hardware-accelerated CSS.
+            </p>
+          </div>
+
+          <div class="card" style="padding: 1.75rem; background: var(--bg-main);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--accent);">&#128274;</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Clean Database Guarantee</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+              No auto-accumulating tracking logs, no bloat in <code>wp_options</code>. Plugins clean up their transients
+              upon deactivation and uninstall cleanly.
+            </p>
+          </div>
+
+          <div class="card" style="padding: 1.75rem; background: var(--bg-main);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem; color: #34d399;">&#128187;</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">DevOps &amp; WP-CLI Ready</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+              Configuration via <code>wp-config.php</code> constants allows zero-click server provisioning, Docker
+              staging, and scriptable deployments via WP-CLI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support and Feedback CTA -->
+    <section class="section">
+      <div class="container text-center" style="text-align: center;">
+        <h2 style="margin-bottom: 1rem;">Can't Find What You're Looking For?</h2>
+        <p class="lead" style="max-width: 600px; margin: 0 auto 2rem auto;">
+          Our core engineering team provides direct technical assistance to all active license holders and WordPress
+          community members.
+        </p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Open Engineering Ticket</a>
+          <a href="faq.html" class="btn btn-secondary btn-lg">Frequently Asked Questions</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="MicroPlugins Homepage">
+            <img src="assets/images/logo-256.png" alt="MicroPlugins" class="brand-logo" width="200" height="33">
+          </a>
+          <p class="footer-tagline">
+            High-performance WordPress plugins engineered for speed, clean architecture, and modern standards.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Plugins</h4>
+          <ul class="footer-links">
+            <li><a href="plugins/ultimate-media-player-and-playlist.html">Ultimate Media Player</a></li>
+            <li><a href="plugins/ultimate-popup-maker.html">Ultimate Popup Maker</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Documentation</h4>
+          <ul class="footer-links">
+            <li><a href="docs/ultimate-media-player-and-playlist.html">Media Player Docs</a></li>
+            <li><a href="docs/ultimate-popup-maker.html">Popup Maker Docs</a></li>
+            <li><a href="docs.html">All Docs Hub &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing &amp; Licenses</a></li>
+            <li><a href="blog.html">Blog &amp; Tutorials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MicroPlugins. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="refund-policy.html">Refunds</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    // Real-time Docs Search and Filter
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('doc-filter');
+      const categoryButtons = document.querySelectorAll('[data-doc-category]');
+      const docCards = document.querySelectorAll('.doc-card');
+
+      let currentCategory = 'all';
+      let currentQuery = '';
+
+      function applyFilter() {
+        docCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          const text = card.textContent.toLowerCase();
+          const matchesCategory = currentCategory === 'all' || category === currentCategory;
+          const matchesQuery = !currentQuery || text.includes(currentQuery);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          currentQuery = e.target.value.toLowerCase().trim();
+          applyFilter();
+        });
+      }
+
+      categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          categoryButtons.forEach(b => {
+            b.classList.remove('active');
+            b.style.color = 'var(--text-muted)';
+          });
+          btn.classList.add('active');
+          btn.style.color = 'var(--text-main)';
+          currentCategory = btn.getAttribute('data-doc-category');
+          applyFilter();
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <rect width="40" height="40" rx="10" fill="#0F172A"/>
+  <!-- Primary micro-block -->
+  <rect x="8" y="8" width="10" height="10" rx="3" fill="#3B82F6"/>
+  <!-- Accent micro-block -->
+  <rect x="22" y="8" width="10" height="10" rx="3" fill="#10B981"/>
+  <!-- Complementary micro-block -->
+  <rect x="8" y="22" width="10" height="10" rx="3" fill="#6366F1"/>
+  <!-- Focus micro-block with pulse dot -->
+  <rect x="22" y="22" width="10" height="10" rx="3" fill="#0EA5E9" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <circle cx="27" cy="27" r="2.5" fill="#38BDF8"/>
+  <!-- Interlocking subtle connector lines -->
+  <line x1="18" y1="13" x2="22" y2="13" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="13" y1="18" x2="13" y2="22" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

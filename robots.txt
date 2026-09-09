@@ -1,0 +1,5 @@
+# MicroPlugins robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://microplugins.com/sitemap.xml
