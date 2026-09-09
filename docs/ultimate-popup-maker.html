@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Popup Maker Documentation — MicroPlugins</title>
+  <meta name="description"
+    content="Comprehensive documentation, setup tutorials, and API reference for Ultimate Popup Maker for WordPress.">
+  <link rel="canonical" href="https://microplugins.com/docs/ultimate-popup-maker.html">
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/favicon-64.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="MicroPlugins Homepage">
+        <img src="../assets/images/logo-256.png" alt="MicroPlugins" class="brand-logo" width="200" height="33">
+      </a>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="../index.html">Home</a>
+        <a href="../plugins.html">Plugins</a>
+        <a href="../about.html">About &amp; Philosophy</a>
+        <a href="../docs.html" class="active" aria-current="page">Docs</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="../plugins/ultimate-popup-maker.html" class="btn btn-primary btn-sm">View Plugin</a>
+        <button class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="mobile-menu" role="region" aria-label="Mobile Navigation">
+      <div class="mobile-nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../plugins.html">Plugins Catalog</a>
+        <a href="../about.html">About &amp; Philosophy</a>
+        <a href="../docs.html" class="active" aria-current="page">Documentation</a>
+        <a href="../blog.html">Blog &amp; Resources</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../contact.html">Contact Support</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <div class="container" style="padding-top: 2rem;">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../docs.html">Docs</a>
+        <span>/</span>
+        <span aria-current="page">Ultimate Popup Maker Documentation</span>
+      </nav>
+    </div>
+
+    <section class="section-sm" style="padding-top: 1rem;">
+      <div class="container">
+        <div style="display: flex; gap: 3rem; align-items: flex-start; flex-wrap: wrap;">
+
+          <!-- Sidebar Table of Contents -->
+          <aside style="flex: 1; min-width: 250px; max-width: 300px; position: sticky; top: 6rem;">
+            <div class="card" style="padding: 1.5rem; background: var(--bg-surface);">
+              <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 1rem; color: var(--text-main);">
+                Ultimate Popup Maker Docs
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.88rem;">
+                <li><a href="#overview" style="color: var(--text-muted); text-decoration: none;">1. Overview &amp; Architecture</a></li>
+                <li><a href="#quick-start" style="color: var(--text-muted); text-decoration: none;">2. Installation &amp; Quick Start</a></li>
+                <li><a href="#visual-canvas" style="color: var(--text-muted); text-decoration: none;">3. Multi-Layer Visual Canvas</a></li>
+                <li><a href="#animation-sequencing" style="color: var(--text-muted); text-decoration: none;">4. 60fps Animation Sequencing</a></li>
+                <li><a href="#triggers" style="color: var(--text-muted); text-decoration: none;">5. Behavioral Triggers &amp; Targeting</a></li>
+                <li><a href="#crm-webhooks" style="color: var(--text-muted); text-decoration: none;">6. Leads CRM &amp; Webhooks</a></li>
+                <li><a href="#shortcodes-blocks" style="color: var(--text-muted); text-decoration: none;">7. Blocks &amp; Shortcode API</a></li>
+                <li><a href="#javascript-events" style="color: var(--text-muted); text-decoration: none;">8. JavaScript Custom Events</a></li>
+              </ul>
+              <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color); font-size: 0.82rem;">
+                <a href="../plugins/ultimate-popup-maker.html#pricing" style="color: var(--primary); font-weight: 600;">&larr; Back to Product Page</a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Documentation Body -->
+          <div style="flex: 3; min-width: 300px; max-width: 820px;">
+
+            <div style="margin-bottom: 2rem;">
+              <span class="badge badge-amber" style="margin-bottom: 0.75rem;">Documentation &amp; Guide</span>
+              <h1 style="margin-bottom: 0.75rem;">Ultimate Popup Maker Documentation</h1>
+              <p class="lead" style="font-size: 1.1rem; color: var(--text-muted);">
+                Learn how to construct multi-layer 60fps popups, configure exit-intent rules, collect subscriber leads, and connect instant webhooks.
+              </p>
+            </div>
+
+            <!-- 1. Overview -->
+            <section id="overview" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>1. Overview &amp; Architecture</h2>
+              <p>
+                Unlike legacy WordPress popup plugins that load multi-megabyte jQuery frameworks, heavy static templates, and intrusive tracking beacons, <strong>Ultimate Popup Maker</strong> was engineered with performance-first web standards:
+              </p>
+              <ul>
+                <li><strong>&lt; 20KB Vanilla JavaScript:</strong> Ultra-lean visitor runtime with zero jQuery dependencies.</li>
+                <li><strong>0.00ms Layout Shift:</strong> Absolute overlay hardware-accelerated stacking ensures 100/100 Core Web Vitals compliance.</li>
+                <li><strong>Local CRM Storage:</strong> All captured emails and metadata are saved in dedicated, optimized WordPress custom tables without external vendor lock-in.</li>
+              </ul>
+            </section>
+
+            <!-- 2. Installation -->
+            <section id="quick-start" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>2. Installation &amp; Quick Start</h2>
+              <ol style="padding-left: 1.25rem; line-height: 1.8;">
+                <li>Download your license ZIP package from your MicroPlugins account receipt.</li>
+                <li>In your WordPress Admin, go to <strong>Plugins &rarr; Add New Plugin &rarr; Upload Plugin</strong>.</li>
+                <li>Select <code>ultimate-popup-maker.zip</code> and click <strong>Install Now</strong>.</li>
+                <li>Click <strong>Activate Plugin</strong>.</li>
+                <li>Navigate to the new <strong>Popup Maker</strong> admin menu item to launch the canvas builder.</li>
+              </ol>
+            </section>
+
+            <!-- 3. Multi-Layer Canvas -->
+            <section id="visual-canvas" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>3. Multi-Layer Visual Canvas</h2>
+              <p>
+                Each popup in Ultimate Popup Maker is built as a composition of discrete visual layers:
+              </p>
+              <div class="card" style="background: var(--bg-surface); margin-bottom: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; color: var(--text-main);">Supported Layer Types:</h4>
+                <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-muted);">
+                  <li><strong>Backdrop Layer:</strong> Color overlay, glassmorphism blur, or click-to-dismiss background.</li>
+                  <li><strong>Shell Layer:</strong> Modal container, slide-in bar, or full-viewport takeover canvas.</li>
+                  <li><strong>Typography &amp; Badges:</strong> Heads, subheads, discount badges with custom angles/rotation.</li>
+                  <li><strong>Lead Capture Inputs:</strong> Single-field email bar, full lead generation forms, or GDPR consent checkboxes.</li>
+                  <li><strong>Countdown Timers:</strong> Evergreen or fixed-date urgency timers with automated action triggers.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- 4. Animation Sequencing -->
+            <section id="animation-sequencing" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>4. 60fps Animation Sequencing</h2>
+              <p>
+                Set staggered entrance delays and transition physics using native CSS hardware acceleration (GPU <code>transform</code> and <code>opacity</code>):
+              </p>
+              <div class="code-box" style="margin-bottom: 1.5rem;">
+                <div class="code-box-header">
+                  <span>Sequencer Example Timeline</span>
+                </div>
+                <pre><code>000ms: Backdrop fade-in (opacity 0 -> 1)
+150ms: Modal shell spring-in (scale 0.9 -> 1.0, translateY 20px -> 0px)
+300ms: Badge elastic bounce (rotate -12deg -> 0deg)
+450ms: Form fields fade and slide (opacity 0 -> 1)</code></pre>
+              </div>
+            </section>
+
+            <!-- 5. Triggers -->
+            <section id="triggers" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>5. Behavioral Triggers &amp; Targeting</h2>
+              <p>
+                Configure exactly when and to whom your popup displays:
+              </p>
+              <ul>
+                <li><strong>Exit Intent (Desktop):</strong> Triggers when cursor velocity indicates the user is moving toward tabs or the close button.</li>
+                <li><strong>Exit Intent (Mobile):</strong> Detects rapid upward scrolling velocity and browser back button navigation.</li>
+                <li><strong>Scroll Depth:</strong> Trigger after scrolling past a designated page percentage (e.g. 50% or 75%).</li>
+                <li><strong>User Inactivity:</strong> Fires after the visitor has been idle for <em>N</em> seconds.</li>
+                <li><strong>Frequency Capping:</strong> Show only once per visitor per session, or wait <em>N</em> days between views.</li>
+              </ul>
+            </section>
+
+            <!-- 6. CRM & Webhooks -->
+            <section id="crm-webhooks" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>6. Leads CRM &amp; Webhooks</h2>
+              <p>
+                Every submission is stored directly inside your WordPress database under <strong>Popup Maker &rarr; Leads CRM</strong>. You can export submissions to CSV with a single click.
+              </p>
+              <p>
+                To automatically synchronize leads with Mailchimp, ActiveCampaign, HubSpot, or webhook routers (Zapier, Make, Pabbly):
+              </p>
+              <ol style="padding-left: 1.25rem; line-height: 1.8;">
+                <li>Open your popup in the editor and click <strong>Integrations &rarr; Webhook</strong>.</li>
+                <li>Enter your endpoint URL (e.g., <code>https://hooks.zapier.com/hooks/catch/...</code>).</li>
+                <li>Select the HTTP method (<code>POST</code>) and click <strong>Send Test Payload</strong>.</li>
+              </ol>
+            </section>
+
+            <!-- 7. Shortcodes & Blocks -->
+            <section id="shortcodes-blocks" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>7. Blocks &amp; Shortcode API</h2>
+              <p>
+                Insert popups or embedded lead forms into any post or page:
+              </p>
+              <div class="code-box" style="margin-bottom: 1.5rem;">
+                <div class="code-box-header">
+                  <span>Shortcode Reference</span>
+                </div>
+                <pre><code>&lt;!-- Manual Trigger or Inline Form --&gt;
+[upm_popup id="black-friday-offer"]
+
+&lt;!-- Trigger via button click --&gt;
+&lt;button class="btn btn-primary" data-upm-trigger="black-friday-offer"&gt;
+  Claim Your Discount
+&lt;/button&gt;</code></pre>
+              </div>
+            </section>
+
+            <!-- 8. JavaScript Custom Events -->
+            <section id="javascript-events" style="margin-bottom: 3.5rem; scroll-margin-top: 5rem;">
+              <h2>8. JavaScript Custom Events</h2>
+              <p>
+                Ultimate Popup Maker dispatches standard DOM CustomEvents for easy integration with Google Analytics 4, Meta Pixel, or custom scripts:
+              </p>
+              <div class="code-box" style="margin-bottom: 2rem;">
+                <div class="code-box-header">
+                  <span>JavaScript Listener</span>
+                </div>
+                <pre><code>document.addEventListener('upm:popupOpen', (event) => {
+  console.log('Popup opened:', event.detail.popupId);
+});
+
+document.addEventListener('upm:leadSubmit', (event) => {
+  console.log('Lead captured:', event.detail.email, event.detail.popupId);
+});</code></pre>
+              </div>
+            </section>
+
+            <!-- Help & Support -->
+            <div class="card" style="padding: 2rem; background: var(--bg-surface); text-align: center;">
+              <h3 style="margin-bottom: 0.5rem;">Need Assistance with Ultimate Popup Maker?</h3>
+              <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+                Our core engineering team provides fast, developer-level support for all active license holders.
+              </p>
+              <div class="btn-group" style="justify-content: center;">
+                <a href="../plugins/ultimate-popup-maker.html#pricing" class="btn btn-primary btn-sm">Get License</a>
+                <a href="../contact.html" class="btn btn-secondary btn-sm">Open Support Ticket</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" aria-label="MicroPlugins Homepage">
+            <img src="../assets/images/logo-256.png" alt="MicroPlugins" class="brand-logo" width="200" height="33">
+          </a>
+          <p class="footer-tagline">
+            Lightweight, single-purpose WordPress plugins engineered for speed, clean code, and zero dashboard clutter.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Plugins</h4>
+          <ul class="footer-links">
+            <li><a href="../plugins/ultimate-media-player-and-playlist.html">Ultimate Media Player</a></li>
+            <li><a href="../plugins/ultimate-popup-maker.html">Ultimate Popup Maker</a></li>
+            <li><a href="../plugins.html">Browse All Plugins</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">About &amp; Philosophy</a></li>
+            <li><a href="../blog.html">Engineering Blog</a></li>
+            <li><a href="../contact.html">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="../docs.html">Documentation Hub</a></li>
+            <li><a href="ultimate-media-player-and-playlist.html">Media Player Docs</a></li>
+            <li><a href="ultimate-popup-maker.html">Popup Maker Docs</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+            <li><a href="../refund-policy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MicroPlugins. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="../privacy.html">Privacy</a>
+          <a href="../terms.html">Terms</a>
+          <a href="../refund-policy.html">Refunds</a>
+          <a href="../sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

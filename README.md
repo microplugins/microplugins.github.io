@@ -32,7 +32,6 @@ microplugins/
 ├── index.html                   # Home page (Hero, metrics, comparison, testimonials)
 ├── about.html                   # About & engineering philosophy for WordPress
 ├── plugins.html                 # Plugins directory with live search & category filters
-├── pricing.html                 # Pricing plans, annual/lifetime toggle, feature matrix
 ├── docs.html                    # Documentation Directory & Hub
 ├── docs/                        # Dedicated single documentation files per plugin
 │   ├── ultimate-media-player-and-playlist.html  # Media Player docs & shortcode reference

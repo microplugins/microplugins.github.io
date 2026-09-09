@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', applyFilters);
   }
 
-  // 6. Pricing Annual / Lifetime Toggle (on pricing.html)
+  // 6. Pricing Annual / Lifetime Toggle (on product landing pages)
   const pricingToggle = document.querySelector('#pricingBillingToggle');
   if (pricingToggle) {
     pricingToggle.addEventListener('click', () => {
