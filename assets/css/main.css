@@ -2034,3 +2034,16 @@ img, svg {
     font-size: 0.74rem;
   }
 }
+
+/* Freemius Checkout Loader & Overlay Safeguards */
+[id^="fs-loader-"] {
+  transition: opacity 0.2s ease-out !important;
+}
+[id^="fs-loader-"]:not(.show),
+.fs-loader:not(.show) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
